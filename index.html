@@ -14,6 +14,23 @@
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
   <body class="page">
+    <dialog class="dialog" aria-labelledby="dialog-title">
+      <svg class="dialog__icon" width="100" height="110" aria-hidden="true">
+        <use href="./svg/icons.svg#floppy"></use>
+      </svg>
+      <div class="dialog__content">
+        <h2 class="dialog__title" id="dialog-title">Сохранено на память</h2>
+        <p class="dialog__text">
+          Этот путь уже пройден, а закрывающий тег — только начало новых
+          страниц. Возвращайтесь сюда, когда понадобится вдохновение.
+        </p>
+        <form class="dialog__form" method="dialog">
+          <button class="button dialog__button" type="submit" data-dialog-close>
+            <span class="button__text">ОК</span>
+          </button>
+        </form>
+      </div>
+    </dialog>
     <header class="header">
       <h1 class="header__title">
         <span class="header__code">&lt;/HTML&gt;</span>
@@ -526,23 +543,6 @@
         <span class="button__text">Сохранить на память</span>
       </button>
     </main>
-    <dialog class="dialog" aria-labelledby="dialog-title">
-      <svg class="dialog__icon" width="100" height="110" aria-hidden="true">
-        <use href="./svg/icons.svg#floppy"></use>
-      </svg>
-      <div class="dialog__content">
-        <h2 class="dialog__title" id="dialog-title">Сохранено на память</h2>
-        <p class="dialog__text">
-          Этот путь уже пройден, а закрывающий тег — только начало новых
-          страниц. Возвращайтесь сюда, когда понадобится вдохновение.
-        </p>
-        <form class="dialog__form" method="dialog">
-          <button class="button dialog__button" type="submit" data-dialog-close>
-            <span class="button__text">ОК</span>
-          </button>
-        </form>
-      </div>
-    </dialog>
     <script src="./scripts/like.js"></script>
     <script src="./scripts/dialog.js"></script>
   </body>
