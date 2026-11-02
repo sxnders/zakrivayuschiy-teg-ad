@@ -1,1 +1,41 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  /* шрифты */
+  --font-main: 'Inter', Arial, sans-serif;
+  --font-accent: 'PressStart2P', 'Courier New', monospace;
+  --card-text-weight: 400;
+  --card-title-weight: 700;
+
+  /* цвета */
+  --text-color: #000;
+  --block-color: #fff;
+  --page-color: #fff;
+  --border-color: #000;
+  --accent-color: #f00;
+  --contour-color: #000;
+  --animation-fill-color: #f00;
+  --animation-hover-fill-color: #ff8a8a;
+  --label-stroke-color: #fff;
+  --backdrop-color: rgb(0 0 0 / 0.6);
+
+  /* фон страницы */
+  --page-gradient: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+
+  /* размеры */
+  --block-width: clamp(320px, 100%, 700px);
+  --block-border: 2px solid var(--border-color);
+  --page-padding-top: 98px;
+  --page-padding-bottom: 100px;
+  --block-gap: 50px;
+  --header-gap: 96px;
+  --header-height: clamp(327px, 275px + 13.85vw, 372px);
+  --header-code-size: clamp(49px, 30.5px + 4.92vw, 65px);
+  --header-caption-size: clamp(13px, 1.5px + 3.08vw, 23px);
+}
